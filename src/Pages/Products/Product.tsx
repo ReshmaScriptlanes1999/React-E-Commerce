@@ -1,7 +1,6 @@
-import e from "express";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { add_product_data } from "./store/Products.store";
+
 const Products = ()=>{
 
     const [product_name, setName] = useState('')
@@ -14,9 +13,10 @@ const Products = ()=>{
 
     const getData = (e: any) => {
         e.preventDefault();
-        dispatch(add_product_data({
-            product_name: product_name, product_price: product_price, product_image: product_image, product_description: product_description
-        }))
+        // dispatch(add_product_data({
+        //    product_name: product_name, product_price: product_price, product_image: product_image, product_description: product_description
+        //   }))
+        
     }
 
     return(
